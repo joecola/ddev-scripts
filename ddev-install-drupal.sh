@@ -82,7 +82,7 @@ cat << EOF > .gitignore
 EOF
 
 echo "Requiring Drush..."
-ddev composer require drush/drush
+ddev composer require --dev drush/drush
 
 echo "Running Drupal installation..."
 ddev drush site:install --site-name="$SITE_NAME" --account-name=admin --account-pass=admin -y
