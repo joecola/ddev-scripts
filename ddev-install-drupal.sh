@@ -88,8 +88,10 @@ echo "Running Drupal installation..."
 ddev drush site:install --site-name="$SITE_NAME" --account-name=admin --account-pass=admin -y
 
 echo "----------------------------------------"
-ddev drush theme:dev on
-echo "----------------------------------------"
-echo "Installation complete! Your site should now be ready."
 
+ddev drush theme:dev on
+
+echo "----------------------------------------"
+
+echo "Installation complete! Your site should now be ready."
 ddev launch
